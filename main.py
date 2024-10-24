@@ -30,7 +30,7 @@ PROMPT_TEMPLATE_CODING_ASSISTANT = Template(
 def get_response(prompt):
     try:
         stream = ollama.chat(
-            model="llama3.2:1b",
+            model="llama3.2:3b",
             messages=[{"role": "user", "content": prompt}],
             stream=True,
         )
